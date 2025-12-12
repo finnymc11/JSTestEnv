@@ -56,6 +56,11 @@ public class refresher {
         Deque<Integer> stack = new ArrayDeque<>();
         int[][] twod = new int[2][2];
 
+        // adding values
+        map.put("apple", 2);
+        q.add(1);
+        q.poll();
+
         //create an array with random values
         int[] array1 = new int[5];
         for (int i=0; i<5; i++){
@@ -110,8 +115,21 @@ public class refresher {
         int primenum = 10;
         System.out.println("is " + primenum + " prime? " + primeTest(primenum));
 
-        map.put("apple", 2);
-        q.add(1);
-        q.poll();
+        //String stuff
+        String hello = "hello";
+        int length = hello.length();
+        char charAt = hello.charAt(2);
+        String substring = hello.substring(1,2);
+        boolean contains = hello.contains("llo");
+        int indexOf = hello.indexOf("ll");
+        String concat = hello.concat(" everybody!");
+        String toUpperCase = hello.toUpperCase();
+        String replace = hello.replace("ello", "i");
+        String trim = hello.trim();
+        String hey = "hey";
+        boolean equals = hello.equals(hey);
+
+        System.out.println(hello+length+charAt+substring+contains+indexOf+concat+toUpperCase+replace+trim+equals);
+    
     }
 }
