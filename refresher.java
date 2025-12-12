@@ -1,8 +1,9 @@
 import java.io.*;
 import java.util.*;
 
+
 public class refresher {
-    //functions
+    //methods
     public static int absoluteValue(int x) {
         if (x < 0) return -x;
         else return x;
@@ -20,10 +21,12 @@ public class refresher {
         //primitives
         int a = 5; //integers
         char b = 'c'; //characters
-        long d = 300; //bigger int
-        double e = 10.43; //floating-point numbers
-        boolean f = true; //t or f
-        String c = "string"; //sequence of char
+        long c = 300; //bigger int
+        double d = 10.43; //floating-point numbers
+        boolean e = true; //t or f
+
+        //object
+        String f = "string"; //sequence of chars
 
         int x;
         x = 10;
@@ -127,9 +130,15 @@ public class refresher {
         String replace = hello.replace("ello", "i");
         String trim = hello.trim();
         String hey = "hey";
-        boolean equals = hello.equals(hey);
+        boolean equals = hello.equals(hello);
 
         System.out.println(hello+length+charAt+substring+contains+indexOf+concat+toUpperCase+replace+trim+equals);
-    
+        
+        //calling a class
+        Dog dog = new Dog();
+        String woof = dog.woof();
+        System.out.println(woof);
+
+
     }
 }
