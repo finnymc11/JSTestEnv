@@ -186,5 +186,10 @@ public class refresher {
             System.out.println("are you fat? " + fat); 
         }
 
+        //ternary operator
+        int income = 1000;
+        String flight = income > 100 ? "first class" : "economy";
+        System.out.println(flight);
+
     }
 }
