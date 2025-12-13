@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import java.awt.*;
 
 
 public class refresher {
@@ -52,7 +53,7 @@ public class refresher {
         String[] names = new String[3];
         int[] numsarr = {1,2,3,4}; //with values
         String[] SUITS = {"clus","spades","diamonds","hearts"}; //with values
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         Set<Integer> set = new HashSet<>();
         Map<String, Integer> map = new HashMap<>();
         Queue<Integer> q = new LinkedList<>();
@@ -139,6 +140,10 @@ public class refresher {
         String woof = dog.woof();
         System.out.println(woof);
 
-
+        //pointer
+        Point pointer1 = new Point(1,1);
+        Point pointer2 = pointer1;
+        pointer1.x = 2;
+        System.out.println(pointer2);
     }
 }
