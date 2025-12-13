@@ -145,5 +145,46 @@ public class refresher {
         Point pointer2 = pointer1;
         pointer1.x = 2;
         System.out.println(pointer2);
+
+        //array test
+        int[] array2 = new int[2];
+        array2[0] = 1;
+        array2[1] = 2;
+        String arrayString = Arrays.toString(array2);
+        System.out.println(arrayString);
+
+        int[] array3 = {3,5,6,9,1,2,4,7,8,10};
+        Arrays.sort(array3);
+        System.out.println(Arrays.toString(array3));
+
+        //parsing
+        String parseStr = "1";
+        int parsed = Integer.parseInt(parseStr);
+        System.out.println(parsed);
+
+        //rounding 
+        double rounded = Math.round(9.9);
+        double randomMath = Math.random() * 10;
+        System.out.println(rounded + Math.round(randomMath));
+
+        //scanner
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scan.nextLine().trim();
+        System.out.println("Hello, " + name+"!");
+
+        //operators
+        boolean tall = false;
+        boolean skinny = true;
+        int weight = 180;
+        boolean fat = (weight >300);
+        if (tall || skinny && weight < 300){
+            System.out.println("healthy");
+        }
+        else {
+            System.out.println("unhealthy");
+            System.out.println("are you fat? " + fat); 
+        }
+
     }
 }
