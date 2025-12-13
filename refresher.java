@@ -191,5 +191,55 @@ public class refresher {
         String flight = income > 100 ? "first class" : "economy";
         System.out.println(flight);
 
+        //switch statement
+        String role = "other";
+        switch(role){
+            case "admin":
+                System.out.println("you are " + role);
+                break;
+            case "moderator":
+                System.out.println("you are " + role);
+                break;
+            default:
+                System.out.println("you are a guest");
+        }
+
+        //fizz buzz
+        System.out.print("Enter a number: ");
+        int number = scan.nextInt();
+        if ((number%5 == 0) && (number%3 == 0)){
+            System.out.println("fizzbuzz");
+        }
+        else if (number%5 == 0){
+            System.out.println("fizz");
+        }
+        else if (number%3 == 0){
+            System.out.println("buzz");
+        }
+        else System.out.println(number);
+
+        //while
+        System.out.print("Type until \"quit\": ");
+        String input = "";
+        while (!input.equals("quit")){
+            input = scan.nextLine();
+            System.out.println(input);
+        }
+
+        //while true
+        System.out.print("Type until \"5\": ");
+        int value;
+        while (true){
+            value = scan.nextInt();
+            if (value == 5){
+                break;
+            }
+        }
+
+        //for each loop
+        String[] fruits = {"apple", "banana", "orange"};
+        for (String fruit : fruits){
+            System.out.println(fruit);
+        }
     }
 }
