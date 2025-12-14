@@ -31,7 +31,7 @@ const fs = require('fs');
 const files = fs.readdirSync('./');
 console.log('Your files: ' + files);
 
-//events
+//events module
 const EventEmitter = require('events');
 
 //register a listener
@@ -44,3 +44,19 @@ logger.on('messageLogged', (arg) => {
 });
 
 logger.log('message!');
+
+//HTTP module
+const http = require('http');
+const server = http.createServer((req, res) => {
+    if (req.url == '/') {
+        res.write('hello world!');
+        res.end(); 
+    }
+    if (req.url == '/api/courses'){
+        res.write(JSON.stringify([1,2,3]));
+        res.end();
+    }
+});
+
+server.listen(3000);
+console.log('Listening on port 3000...');
